@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var stackedit = new StackEdit();
+    var stackedit = new Stackedit();
 
     stackedit.on('fileChange', function(file) {
         $('#output').html(file.content.html);
