@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown to HTML Converter</title>
+    <title>Markdown to HTML Converter with LaTeX</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         #output {
             border: 1px solid #ddd;
@@ -14,24 +16,14 @@
             background-color: #f8f9fa;
         }
         #markdown {
-            height: 400px;
+            height: 350px;
+        }
+        .mt-4 {
+            margin-top: 1.5em;
         }
     </style>
 </head>
 <body>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-6">
-                <textarea id="markdown" class="form-control" placeholder="Enter Markdown"></textarea>
-            </div>
-            <div class="col-md-6">
-                <div id="output"></div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://unpkg.com/stackedit-js@1.0.7/docs/lib/stackedit.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="app.js"></script>
+    <!-- Your body content -->
 </body>
 </html>
