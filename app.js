@@ -53,7 +53,7 @@ Use blockquotes for emphasis:
 
 Embed images to add visual interest:
 
-![Sample Image](https://example.com/sample-image.jpg)
+![Sample Image](https://images-assets.nasa.gov/image/iss070e026322/iss070e026322~medium.jpg)
 
 ## Hyperlinks
 
