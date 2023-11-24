@@ -12,14 +12,6 @@ $(document).ready(function() {
 
     // Set the initial content to the textarea
     $('#markdown').val(initialContent);
-
-    // Open StackEdit with the initial content
-    stackedit.openFile({
-        name: 'Filename', // Optional
-        content: {
-            text: initialContent
-        }
-    });
     
     $('#markdown').on('input', function() {
         var markdownText = $(this).val();
