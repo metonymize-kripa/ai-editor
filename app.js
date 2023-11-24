@@ -3,18 +3,67 @@ $(document).ready(function() {
 
     // LaTeX formula you want to initialize the textarea with
     var initialContent = `
-# Welcome to the AI Editor
+# Advanced Features of the AI Editor
 
-This editor is designed to help you explore and understand complex mathematical concepts with ease. One of the key features of this editor is its ability to handle and display mathematical expressions in a clear and visually appealing way.
+Welcome to the AI Editor, a versatile tool designed to enhance your understanding of complex concepts. Below are examples of some of the advanced Markdown features you can use:
 
-For example, consider the following inequality, known as the Cauchy-Schwarz Inequality:
+## Mathematical Expressions
+
+As previously mentioned, the editor can beautifully render mathematical expressions:
 
 $$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$
 
-This inequality is a fundamental result in linear algebra, and it plays a crucial role in various mathematical and scientific applications. With this editor, you can delve into such equations, manipulate them, and explore their implications in a user-friendly environment.
+## Code Blocks
 
-Feel free to experiment and learn more about the fascinating world of mathematics!
+For coding enthusiasts, the editor supports syntax-highlighted code blocks:
+
+\`\`\`javascript
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+greet("World");
+\`\`\`
+
+## Tables
+
+Organize data efficiently with tables:
+
+| Syntax    | Description   | Test Text     |
+| --------- | ------------- | ------------- |
+| Header    | Title         | Here's this   |
+| Paragraph | Text          | And more      |
+
+## Lists
+
+Create ordered and unordered lists:
+
+1. First item
+2. Second item
+   - Subitem 1
+   - Subitem 2
+3. Third item
+
+## Blockquotes
+
+Use blockquotes for emphasis:
+
+> “The only way to learn mathematics is to do mathematics.” – Paul Halmos
+
+## Images
+
+Embed images to add visual interest:
+
+![Sample Image](https://example.com/sample-image.jpg)
+
+## Hyperlinks
+
+Include hyperlinks for additional resources:
+
+[Click here for more information](https://example.com)
+
+Feel free to explore these features and more to enhance your learning and documentation experience!
 `;
+
 
     stackedit.on('fileChange', function(file) {
         $('#output').html(file.content.html);
