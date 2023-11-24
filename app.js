@@ -1,18 +1,18 @@
 $(document).ready(function() {
     var stackedit = new Stackedit();
 
-    // Initialize StackEdit fileChange event listener
     stackedit.on('fileChange', function(file) {
-        // Update the output area with the HTML content
-        $('#output').html(file.content.html);
-        // Update the textarea with the Markdown content
-        $('#markdown').val(file.content.text);
+        var outputDiv = $('#output');
+        outputDiv.html(file.content.html);
+        // Re-process the mathematical formulas in the output
+        MathJax.typesetPromise([outputDiv.get(0)]).catch(function(err) {
+            console.error('MathJax rendering error:', err);
+        });
     });
 
     $('#markdown').on('input', function() {
         var markdownText = $(this).val();
-        
-        // Open or update the file in StackEdit with the new Markdown content
+
         stackedit.openFile({
             name: 'Filename', // Optional
             content: {
