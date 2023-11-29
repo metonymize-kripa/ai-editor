@@ -55,7 +55,8 @@ Feel free to explore these features and more to enhance your learning and docume
         });
 
         const data = await response.json();
-        return data.choices[0].message["content"];
+        const ai_response_text = data.choices[0].message["content"];
+        return `<!--\nAI Response Word Count: ${ai_response_text.split(' ').length}\n${ai_response_text}\n-->\n${text}`;
     }
 
     // Event handler for the AI iterate button
