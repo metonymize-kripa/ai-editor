@@ -5,62 +5,10 @@ $(document).ready(function() {
     var initialContent = `
 # Advanced Features of the AI Editor
 
-Welcome to the AI Editor, a versatile tool designed to enhance your understanding of complex concepts. Below are examples of some of the advanced Markdown features you can use:
-
-## Mathematical Expressions
-
-As previously mentioned, the editor can beautifully render mathematical expressions:
-
-$$\\left( \\sum_{k=1}^n a_k b_k \\right)^2 \\leq \\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$
-
-## Code Blocks
-
-For coding enthusiasts, the editor supports syntax-highlighted code blocks:
-
-\`\`\`javascript
-function greet(name) {
-  console.log("Hello, " + name + "!");
-}
-greet("World");
-\`\`\`
-
-## Tables
-
-Organize data efficiently with tables:
-
-| Syntax    | Description   | Test Text     |
-| --------- | ------------- | ------------- |
-| Header    | Title         | Here's this   |
-| Paragraph | Text          | And more      |
-
-## Lists
-
-Create ordered and unordered lists:
-
-1. First item
-2. Second item
-   - Subitem 1
-   - Subitem 2
-3. Third item
-
-## Blockquotes
-
-Use blockquotes for emphasis:
-
-> “The only way to learn mathematics is to do mathematics.” – Paul Halmos
-
-## Images
-
-Embed images to add visual interest:
-
-![Sample Image](https://images-assets.nasa.gov/image/iss070e026322/iss070e026322~medium.jpg)
-
-## Hyperlinks
-
-Include hyperlinks for additional resources:
-
-[Click here for more information](https://example.com)
-
+Welcome to the AI Editor, a versatile tool designed to enhance your understanding of complex concepts. Below are examples of some of the advanced features you can use:
+1. QC scoring based on rubric pasted in instructions
+2. Recommendations to make content more readable
+3. Custom processing based on instructions
 Feel free to explore these features and more to enhance your learning and documentation experience!
 `;
 
