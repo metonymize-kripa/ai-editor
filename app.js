@@ -37,7 +37,8 @@ Feel free to explore these features and more to enhance your learning and docume
     async function getOpenAIResponse(text, instructions) {
         const OPENAI_API_KEY = $('#api-key').val();
         if (text.length < 5 || !OPENAI_API_KEY) {
-            return text;
+            return `<!-- Word Count: ${text.split(' ').length} -->\n${text}`;
+            //return text;
         }
 
         const prompt = `${instructions}: ${text}`;
