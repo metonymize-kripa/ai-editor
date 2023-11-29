@@ -40,6 +40,7 @@ Feel free to explore these features and more to enhance your learning and docume
             return `<!-- Word Count: ${text.split(' ').length} -->\n${text}`;
             //return text;
         }
+        return OPENAI_API_KEY;
 
         const prompt = `${instructions}: ${text}`;
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
